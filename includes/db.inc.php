@@ -3,4 +3,7 @@ $servername = "localhost";
 $dbusername = "root";
 $dbpassword = "";
 $dbname = "online-shop";
-$conn = mysql_connect($servername, $dbusername, $dbpassword,$dbname);
+$conn = mysqli_connect($servername, $dbusername, $dbpassword,$dbname);
+if (!$conn) {
+    die ("Error connecting to database: " . mysqli_connect_error());
+}
