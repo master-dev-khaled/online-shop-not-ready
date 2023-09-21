@@ -1,0 +1,26 @@
+CREATE TABLE IF NOT EXISTS `users` (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    usename VARCHAR(255) NOT NULL,
+    age INTEGER NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+);
+CREATE TABLE IF NOT EXISTS `admins` (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    cin INT(8) NOT NULL,
+    usename VARCHAR(255) NOT NULL,
+    firstname VARCHAR(255) NOT NULL,
+    lastname VARCHAR(255) NOT NULL,
+    age INTEGER NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+);
+CREATE TABLE IF NOT EXISTS `products` (
+    reference INTEGER PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    quantity INTEGER NOT NULL,
+    supplier VARCHAR(255) NOT NULL,
+    description LONGTEXT,
+);
