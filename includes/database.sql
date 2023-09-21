@@ -23,5 +23,6 @@ CREATE TABLE Products (
     quantity INT NOT NULL,
     supplier VARCHAR(255) NOT NULL,
     price FLOAT NOT NULL,
+    sold FLOAT,
     description LONGTEXT
 );

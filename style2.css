@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+.login {
+    color: red;
+}
+img {
+    width: 70px;
+    height: 85px;
+}
+.content {
+    margin-top: 180px;
+}
+.fa-1,.fa-2,.fa-3 {
+    font-size: 100px;
+    color: grey; 
+}
+p {
+    color: grey;
+}
+.row {
+    height: 400px;
+}
+.copy {
+    letter-spacing: 2px;
+}
