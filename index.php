@@ -16,11 +16,11 @@
                 <img src="imgs/LOGO TRANSPARENT.png" class="ms-4" alt="">
                 <ul class="d-flex justify-content-between">
                     <a href="#" class="login d-flex text-decoration-none mt-1 btn bg-white me-1">Login</a>
-                    <a href="#" class="d-flex text-decoration-none mt-1 btn bg-white text-black ms-1 me-5">SignUp</a>
+                    <a href="signup.php" class="d-flex text-decoration-none mt-1 btn bg-white text-black ms-1 me-5">SignUp</a>
                 </ul>
             </div>
             <div class="d-flex flex-column align-items-center content">
-                <h3 class="text-white fw-bold">Welcome to khaled shop</h3>
+                <h3 class="text-white fw-bold">Welcome to Bousselim shop</h3>
                 <p class="text-white mt-1">Here you will find everything you want</p>
             </div>
         </div>
