@@ -80,6 +80,11 @@ if (isset($_POST['signupbtn'])) {
                         else {
                             mysqli_stmt_bind_param($stmt,"sisss",$username,$age,$address,$email,$hashpass);
                             mysqli_stmt_execute($stmt);
+                            session_start();
+                            $_SESSION['username'] =$username;
+                            $_SESSION['email'] = $email;
+                            $_SESSION['age'] = $age;
+                            $_SESSION['address'] = $address;
                             header("Location:../dashboard.php?signup=success");
                             exit();
                         }

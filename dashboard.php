@@ -1,3 +1,4 @@
+<?php require 'includes/session.inc.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +53,7 @@
                 </div>
                 <div class="dropdown open p-3">
                     <button class="btn border-none btn-secondary dropdown-toggle text-white" id="triggerId" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa fa-user"></i><span class="ms-2">Khaled</span>
+                        <i class="fa fa-user"></i><span class="ms-2"><?php echo $_SESSION['username']?></span>
                     </button>
                     <div class="dropdown-menu" aria-labelledly="triggerId">
                         <li><a class="dropdown-item" href="#">Settings</a></li>
@@ -62,6 +63,9 @@
             </div>
             <div class="p-3">
                 <h3>content area</h3>
+                <form action="includes/logout.inc.php" method="post">
+                    <input type="submit" value="Logout" class="d-flex text-decoration-none mt-1 btn bg-white text-black me-5" name="logoutbtn" id="logoutbtn">
+                </form>
             </div>
         </div>
     </div>

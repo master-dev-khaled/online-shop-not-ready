@@ -1,3 +1,4 @@
+<?php require 'includes/session.inc.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,7 @@
                 <img src="imgs/LOGO TRANSPARENT.png" class="ms-4" alt="">
                 <ul class="d-flex justify-content-between">
                     <a href="login.php" class="login d-flex text-decoration-none mt-1 btn bg-white me-1">Login</a>
-                    <a href="signup.php" class="d-flex text-decoration-none mt-1 btn bg-white text-black ms-1 me-5">SignUp</a>
+                    <a href="signup.php" class="d-flex text-decoration-none mt-1 btn bg-white text-black ms-1 me-2">SignUp</a>
                 </ul>
             </div>
             <div class="d-flex flex-column align-items-center content">
