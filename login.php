@@ -11,38 +11,17 @@
 <body>
     <div class="container-fluid d-flex justify-content-center align-items-center min-vh-100">
         <div class="bg-danger d-flex flex-column justify-content-center align-items-between p-4 ">
-            <form action="includes/signup.inc.php" method="post" id="signupform">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-between">
-                        <div class="mb-3">
-                            <label for="exampleInputUsername1" class="form-label fs-4">Username</label>
-                            <input type="text" class="form-control" id="exampleInputUsername1" name="username">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label fs-4">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
-                            <div id="emailHelp" class="text-black">We'll never share your email with anyone else.</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label fs-4">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" name="password">
-                        </div>
+            <form action="includes/login.inc.php" method="post" id="loginform">
+                <div class="row d-flex flex-column justify-content-between align-items-center">
+                    <div class="mb-3">
+                        <label for="exampleInputUsername2" class="form-label fs-4">Username</label>
+                        <input type="text" class="form-control" id="exampleInputUsername2" name="username2">
                     </div>
-                    <div class="col-md-6 col-sm-12 d-flex flex-column justify-content-between">
-                        <div class="mb-3">
-                            <label for="exampleInputAge1" class="form-label fs-4">Age</label>
-                            <input type="number" class="form-control" id="exampleInputAge1" name="age">
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputAddress1" class="form-label fs-4">Address</label>
-                            <input type="text" class="form-control" id="exampleInputAddress1" name="address">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1" name="condition">
-                            <label class="form-check-label" for="exampleCheck1">I agree with all the conditions.</label>
-                        </div>
-                        <input type="submit" value="signUp" class="btn text-danger bg-light" name="signupbtn" id="signupbtn">
+                    <div class="mb-3">
+                        <label for="exampleInputPassword2" class="form-label fs-4">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2" name="password2">
                     </div>
+                    <input type="submit" value="Login" class="btn text-danger bg-light" name="loginbtn" id="loginbtn">
                 </div>
             </form>
         </div>
@@ -58,7 +37,10 @@
         background-color: #dedede;
     }
     .container-fluid > div {
-        width: calc(100vw - 300px);
+        width: calc(100vw - 600px);
+    }
+    .btn {
+        width: 200px;
     }
 </style>
 </body>
