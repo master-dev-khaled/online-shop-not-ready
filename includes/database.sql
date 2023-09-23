@@ -1,6 +1,6 @@
 CREATE TABLE Users (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    usename VARCHAR(255) NOT NULL,
+    username VARCHAR(255) NOT NULL,
     age INT NOT NULL,
     address VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
@@ -9,7 +9,7 @@ CREATE TABLE Users (
 CREATE TABLE Admins (
     id INT PRIMARY KEY AUTO_INCREMENT,
     cin INT(8) NOT NULL,
-    usename VARCHAR(255) NOT NULL,
+    username VARCHAR(255) NOT NULL,
     firstname VARCHAR(255) NOT NULL,
     lastname VARCHAR(255) NOT NULL,
     age INT NOT NULL,
