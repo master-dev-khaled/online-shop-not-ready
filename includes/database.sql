@@ -39,3 +39,4 @@ CREATE TABLE orders (
     newprice FLOAT NOT NULL,
     description LONGTEXT
 );
+INSERT INTO 
