@@ -19,10 +19,23 @@ CREATE TABLE Admins (
 );
 CREATE TABLE Products (
     reference INT PRIMARY KEY,
+    type VARCHAR(255) NOT NULL,
     name VARCHAR(255) NOT NULL,
     quantity INT NOT NULL,
     supplier VARCHAR(255) NOT NULL,
     price FLOAT NOT NULL,
     sold FLOAT,
+    newprice FLOAT NOT NULL,
+    description LONGTEXT
+);
+CREATE TABLE orders (
+    reference INT PRIMARY KEY,
+    type VARCHAR(255) NOT NULL,
+    name VARCHAR(255) NOT NULL,
+    quantity INT NOT NULL,
+    supplier VARCHAR(255) NOT NULL,
+    price FLOAT NOT NULL,
+    sold FLOAT,
+    newprice FLOAT NOT NULL,
     description LONGTEXT
 );
